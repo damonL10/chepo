@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload File</title>
+  <link rel="stylesheet" href="./css/claimnow_image.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="outer_container">
+    <div class="login-box">
+      <!-- <div class="left"></div> -->
+      <div class="right">
+
+        <img src="./image_assets/pinklady.png" height="200" width="400" />
+        <form id="form_claim_now">
+          <h1>Claim</h1>
+          <div>You Claim Id is: <span id="claim_id_span"></span>
+          </div>
+          <div id="upload_status"></div>
+          <br>
+          <div><img src="./image_assets/uploadpageImage.jpg" height="250" width="430" /></div>
+          <div><label for="file">[Please upload image showing your car damage]</label></div>
+          <input id="car_image" type="file" name="car_image" requried />
+          <input class="btn" type="submit" value="Submit" />
+        </form>
+        <ion-icon name="home"></ion-icon><a href="./main.html">Back to main page</a>
+        <p><a href="../index.html">Log out here</a></p>
+      </div>
+    </div>
+  </div>
+
+<script src="./js/claimnow_image.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

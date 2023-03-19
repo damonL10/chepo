@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claim</title>
+  <link rel="stylesheet" href="./css/claimnow.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="outer_container">
+    <div class="login-box">
+      <!-- <div class="left"></div> -->
+      <div class="right">
+        <!-- <h1>Claim</h1> -->
+        <img src="./image_assets/pinklady.png" height="200" width="400" />
+        <form id="form_claim_now">
+          <h1>Claim</h1>
+          <br>
+          <div>
+            <label for="car_list" class="car-list"><ion-icon name="car"></ion-icon>My Car</label>
+            <select class="car_list" id="car_list" name="car_list">
+              <option>Please choose your car:</option>
+
+            </select>
+          </div>
+          <div class="desc-label">
+            <label class="desc-label" for="descriptions"><ion-icon name="create"></ion-icon>Descriptions</label>
+          </div>
+          <div>
+            <textarea type="text" class="text_input" id="descriptions" name="descriptions"
+              placeholder="Enter the Descriptions Here" rows="10" cols="50" requried></textarea>
+          </div>
+          <div>
+            <label for="accident_date"><ion-icon name="calendar-number"></ion-icon>Accident Date</label>
+            <input type="date" class="form-control" id="accident_date" name="accident_date" required>
+          </div>
+          <div class="buttons">
+            <input type="submit" class="btn" id="submit-button" value="Submit" />
+            <input type="reset" class="btn" id="reset-button" />
+          </div>
+        </form>
+        <ion-icon name="home"></ion-icon><a href="./main.html">Back to main page</a>
+        <p><a href="../index.html">Log out here</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/claimnow.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

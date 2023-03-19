@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body{
+  background-color: rgb(227, 51 ,118) ;
+}
+
+.logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 0;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+a:hover{
+  color: rgb(252, 128, 176);
+}
+
+.container {
+  position: relative;
+}
+.image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(227, 51 ,118);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.body_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-box{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 880px) {
+  .login-box{
+    grid-template-columns: 1fr;
+  }
+
+  .outer_container{
+    height: 200px;
+    margin-bottom: 15px;
+  }
+}
